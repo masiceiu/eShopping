@@ -4,6 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 
+
+import { AuthModule } from './auth/auth.module';
+
 // COMPONENTS
 // =======================
 import { HeaderComponent } from './components/header.component';
