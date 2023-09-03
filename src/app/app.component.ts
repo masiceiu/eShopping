@@ -17,9 +17,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     // Get all product list on component init
-    this.myMainService.getProducts().subscribe(data => {
+    this.myMainService.getProducts().subscribe((data:any) => {
       console.log(data)
-      //this.products = data.products;
+      this.products = data.products;
     });
   }
 
