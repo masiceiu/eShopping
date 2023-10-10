@@ -12,6 +12,7 @@
     "@angular/platform-browser": "16.2.2",
     "@angular/platform-browser-dynamic": "16.2.2",
     "@angular/router": "16.2.2",
+    "@firebase/app": "^0.9.19",
     "@types/jasmine": "4.0.3",
     "firebase": "^10.4.0",
     "firebase-admin": "^11.11.0",
