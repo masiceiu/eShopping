@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { initializeApp } from "@firebase/app";
-//import firebase from 'firebase/app';
-import { environment } from '../../../environments/environment';
+import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 
-const app = initializeApp(environment.firebase);
+import { environment } from '../../../environments/environment';
+//const app = initializeApp(environment.firebase);
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirestore(() => getFirestore()),
   ],
   declarations: []
 })
